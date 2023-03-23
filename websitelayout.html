@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        .container {
+            width: 95%;
+            height: 200vh;
+            
+            margin: 2% auto;
+        }
+
+        .nav {
+            height: 200vh;
+            background-color: wheat;
+            float: left;
+        }
+
+        .aside {
+            height: 200vh;
+            float: left;
+            /* background-color: aqua; */
+        }
+
+        .circle {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            margin: 5vh auto;
+            border-radius: 50%;
+        }
+
+        .text {
+            color: white;
+            margin-left: 20px;
+            padding-top: 20px;
+            font-size: 30px;
+            font-style: italic;
+        }
+
+        .navbar ul li {
+            padding: 5%;
+            list-style-type: none;
+            background-color: teal;
+            margin-bottom: 2vh;
+            margin-top: 2vh;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .button {
+            height: 50px;
+            width: 200px;
+
+            margin-top: 100px;
+        }
+
+        .text2 {
+            color: brown;
+            padding-top: 10px;
+            font-size: 50px;
+        }
+
+        .tweet p {
+            text-transform: uppercase;
+            font-size: 20px;
+            text-align: center;
+            font-weight: bolder;
+            color: teal;
+            margin-top: 5vh;
+        }
+
+        .btn {
+            background-color: teal;
+            color: white;
+            font: bold;
+            padding: 10px;
+            border-radius: 15%;
+            margin-top: 2vh;
+            margin-left: 40px;
+            cursor: pointer;
+        }
+
+        .set {
+            margin-top: 2vh;
+            font-weight: bolder;
+        }
+
+        .cook {
+            height: 200px;
+            background-color: aqua;
+            margin-top: 4vh;
+            margin-right: 1vh;
+        }
+
+        .cook img {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+        }
+
+        .cook h2 {
+            color: teal;
+            font-weight: bold;
+            margin-top: 2vh;
+            text-align: center;
+        }
+
+        .btn2 {
+            background: #3498db;
+            background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+            background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+            background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+            background-image: -o-linear-gradient(top, #3498db, #2980b9);
+            background-image: linear-gradient(to bottom, #3498db, #2980b9);
+            -webkit-border-radius: 28;
+            -moz-border-radius: 28;
+            border-radius: 28px;
+            cursor: pointer;
+            margin-left: 4vh;
+            margin-top: 2vh;
+            font-family: Arial;
+            color: #ffffff;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+        }
+
+        .btn2:hover {
+            background: #3cb0fd;
+            background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+            background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+            background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+            background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+            background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+            text-decoration: none;
+        }
+
+        .box {
+            background-image: url(image/photo-1513104890138-7c749659a591.jpg);
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        .food h1 {
+            text-align: center;
+            color: teal;
+            margin-top: 2vh;
+        }
+
+        .items {
+            width: 200px;
+            height: 300px;
+            background-color: beige;
+            float: left;
+            margin-left: 1%;
+            margin-top: 1vh;
+        }
+
+        .items img {
+            width: 100%;
+            height: 120px;
+            background-size: cover;
+        }
+
+        .items h2 {
+            color: teal;
+            text-align: center;
+        }
+        .items p{
+            text-align: center;
+        }
+        .footer{
+            height: 300px;
+            margin-top: 350px;
+            /* background-color: black; */
+            background-image: url(image/download\ 5.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav col-2">
+            <div class="circle">
+                <h3 class="text">food <br> court</h3>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Help</a></li>
+                </ul>
+            </div>
+            <div class="tweet">
+                <p>latest tweet</p>
+                <button class="btn"> contact with us</button>
+            </div>
+            <p class="set">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas reiciendis quisquam
+                voluptate?
+                Dignissimos mollitia, rerum animi est officia nam soluta ducimus nemo vel, labore possimus. Magni
+                dignissimos harum libero labore veritatis est odio, voluptatum id, laudantium minus aspernatur at atque
+                ad ipsum magnam corrupti eum tempora modi beatae similique praesentium?</p>
+            <div class="cook">
+                <img src="image/360_F_210629616_9TDRCC4KBixjUwWCRS0ZvKbRUzX88xr7.jpg" alt="">
+                <img src="image/mykhlf.jpg" alt="">
+                <h2><i>DELECIOUS FOOD</i></h2>
+                <button class="btn2">Order now</button>
+            </div>
+        </div>
+        <div class="aside col-10">
+            <div class="box">
+            </div>
+            <div class="food">
+                <h1>Delecious food</h1>
+
+                <div class="items">
+                    <div class="img3">
+                        <img src="image/mykhlf.jpg" alt="">
+                        <h2>chines nodles</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum delectus voluptatibus
+                            molestias eius rem culpa nisi blanditiis cupiditate facilis esse incidunt provident
+                            corrupti, quia quam eos doloremque commodi </p>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <div class="img3">
+                        <img src="image/download (1).jpg" alt="">
+                        <h2>chicken</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum delectus voluptatibus
+                            molestias eius rem culpa nisi blanditiis cupiditate facilis esse incidunt provident
+                            corrupti, quia quam eos doloremque commodi </p>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <div class="img3">
+                        <img src="image/download (2).jpg" alt="">
+                        <h2>chaap</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum delectus voluptatibus
+                            molestias eius rem culpa nisi blanditiis cupiditate facilis esse incidunt provident
+                            corrupti, quia quam eos doloremque commodi </p>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <div class="img3">
+                        <img src="image/download.jpg" alt="">
+                        <h2>panner</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum delectus voluptatibus
+                            molestias eius rem culpa nisi blanditiis cupiditate facilis esse incidunt provident
+                            corrupti, quia quam eos doloremque commodi </p>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <div class="img3">
+                        <img src="image/italian-food-background-dics-71204772.jpg" alt="">
+                        <h2>italian</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum delectus voluptatibus
+                            molestias eius rem culpa nisi blanditiis cupiditate facilis esse incidunt provident
+                            corrupti, quia quam eos doloremque commodi </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer"></div>
+        </div>
+    </div>
+</body>
+
+</html>
